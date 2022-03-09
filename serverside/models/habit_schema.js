@@ -42,7 +42,9 @@ const habitSchema = new Schema(
         },
         image_path:{
             type: String,
-            
+        },
+        user_id: {
+            type: Schema.Types.ObjectId
         }
     })
 

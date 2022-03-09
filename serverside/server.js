@@ -59,7 +59,7 @@ app.delete('/user/:id', deleteUser)
 //HABIT ROUTES
 app.get('/habit', loginRequired, getAllHabits)
 app.get('/habit/:id', loginRequired, getSingleHabit)
-app.post('/habit',loginRequired, addHabit)
+app.post('/add/habit/:userId',loginRequired, addHabit)
 app.put('/habit/edit/:id', loginRequired, updateHabit)
 app.delete('/habit/:id', deleteHabit)
 
